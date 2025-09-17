@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CourseHub — Daftar</title>
+  <meta name="description" content="Platform kursus sederhana untuk belajar full-stack MERN." />
+  <!-- Styles akan kita isi di Hari 3 -->
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Navigasi utama">
+      <a href="#" aria-current="page">CourseHub</a>
+      <ul>
+        <li><a href="#" aria-current="page">Beranda</a></li>
+        <li><a href="#">Katalog Kursus</a></li>
+        <li><a href="#">Masuk</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h1>Mulai Belajar di CourseHub</h1>
+      <p>Daftar gratis untuk mengelola kursus dan kemajuan belajarmu.</p>
+    </section>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="form-title">
+      <h2 id="form-title">Daftar Akun</h2>
+
+      <!--
+        Catatan migrasi React:
+        - Form ini nanti menjadi <SignupForm />.
+        - Field & label akan dipetakan ke controlled components.
+        - Validasi HTML5 dipertahankan, ditambah client-side JS/TS.
+      -->
+      <form id="signup-form" action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Data Pengguna</legend>
+
+          <div class="field">
+            <label for="fullname">Nama Lengkap</label>
+            <input
+              id="fullname"
+              name="fullname"
+              type="text"
+              placeholder="Mis. Aldo Pratama"
+              required
+              autocomplete="name"
+              aria-describedby="fullname-help"
+            />
+            <small id="fullname-help">Gunakan nama asli untuk sertifikat.</small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="kamu@contoh.com"
+              required
+              autocomplete="email"
+              inputmode="email"
+            />
+          </div>
+
+          <div class="field">
+            <label for="password">Kata Sandi</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Minimal 8 karakter"
+              required
+              minlength="8"
+              autocomplete="new-password"
+            />
+          </div>
+
+          <div class="field">
+            <label for="role">Peran</label>
+            <select id="role" name="role" required>
+              <option value="">Pilih peran</option>
+              <option value="student">Siswa</option>
+              <option value="instructor">Instruktur</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>
+              <input type="checkbox" name="terms" required />
+              Saya setuju dengan ketentuan layanan
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Daftar</button>
+
+        <!--
+          Hari 5—7: kita tambahkan JS untuk:
+          - mencegah submit jika invalid
+          - menampilkan pesan error yang ramah
+          - menyimpan draft ke localStorage
+        -->
+      </form>
+    </section>
+
+    <section aria-labelledby="why-title">
+      <h2 id="why-title">Kenapa CourseHub?</h2>
+      <ul>
+        <li>Belajar lewat proyek nyata</li>
+        <li>Tumbuh bertahap dari HTML ke MERN</li>
+        <li>Struktur siap scale ke production</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="year"></span> CourseHub</small>
+    <!-- Hari 6: JS kecil untuk update tahun -->
+  </footer>
+</body>
+</html>
