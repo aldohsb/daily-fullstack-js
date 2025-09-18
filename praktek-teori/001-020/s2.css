@@ -1,0 +1,18 @@
+body {
+  background-color: #f0f0f0; /* abu-abu muda */
+  font-family: Arial, sans-serif;
+}
+
+.judul {
+  color: darkblue;
+  text-align: center;
+}
+
+.kotak {
+  width: 250px;
+  padding: 15px;
+  border: 3px solid #333;
+  margin: 20px auto; /* auto untuk center horizontal */
+  background-color: white;
+  box-sizing: border-box; /* hitung width lebih mudah */
+}
