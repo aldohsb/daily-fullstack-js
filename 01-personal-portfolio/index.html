@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saya - MERN Journey</title>
+    <style>
+        /* CSS akan kita tambahkan besok */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Selamat Datang di Portfolio Saya</h1>
+        <p>Saya sedang belajar MERN Stack - Hari 1 dari 400 hari!</p>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <h2>Tentang Saya</h2>
+        <p>Nama: Rinaldo</p>
+        <p>Goal: Menjadi Full-Stack Developer dalam 400 hari</p>
+        <p>Hari ini saya belajar: HTML dasar dan struktur web</p>
+    </section>
+
+    <!-- Skills Section (akan berkembang setiap hari) -->
+    <section>
+        <h2>Skills yang Sedang Dipelajari</h2>
+        <ul>
+            <li>✅ HTML - Hari 1</li>
+            <li>⏳ CSS - Coming Soon</li>
+            <li>⏳ JavaScript - Coming Soon</li>
+            <li>⏳ React - Coming Soon</li>
+        </ul>
+    </section>
+
+    <!-- Progress Tracker -->
+    <section>
+        <h2>Progress MERN Journey</h2>
+        <div>
+            <p>Hari: 1 / 400</p>
+            <p>Progress: 0.25%</p>
+            <!-- Progress bar sederhana -->
+            <div style="width: 100%; background-color: #ddd; height: 20px; border-radius: 10px;">
+                <div style="width: 0.25%; background-color: #4CAF50; height: 20px; border-radius: 10px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journal Section -->
+    <section>
+        <h2>Learning Journal</h2>
+        <div>
+            <h3>Hari 1 - HTML Fundamentals</h3>
+            <p><strong>Yang dipelajari:</strong></p>
+            <ul>
+                <li>Struktur dasar HTML</li>
+                <li>Tags: html, head, body, header, section</li>
+                <li>Meta tags untuk responsive design</li>
+                <li>Semantic HTML elements</li>
+            </ul>
+            <p><strong>Tantangan:</strong> Memahami hierarki HTML dan best practices</p>
+            <p><strong>Next:</strong> Besok akan belajar CSS styling</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="margin-top: 50px; text-align: center; color: #666;">
+        <p>© 2024 - MERN Journey. Hari 1 dari 400 hari perjalanan coding!</p>
+        <p>Tanggal: <span id="today-date"></span></p>
+    </footer>
+
+    <script>
+        // JavaScript sederhana untuk tanggal
+        document.getElementById('today-date').textContent = new Date().toLocaleDateString('id-ID');
+    </script>
+</body>
+</html>
